@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&family=Roboto&display=swap');
+
+html, body{
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+*{	
+
+	
+	box-sizing: border-box;
+}
+
+
+header{
+	color: #fff;
+	background-color: rgb(0,0,0);
+}
+
+.container-header{
+	
+	position: relative;
+	height: 100vh;
+}
+
+.navbar{
+	padding: 2em;
+	text-align: right;
+}
+
+.navbar li{
+	padding: 1em;
+	display: inline;
+	text-transform: uppercase;
+	color: #fff;
+	
+}
+.navbar a{
+	padding: 1em;
+	background: -webkit-linear-gradient(left,#4d79ff,violet);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	
+}
+ 
+.navbar a:hover{
+	background-color:rgb(179, 179, 179);
+	
+}
+
+.banner{
+
+	font-family: monospace;
+	position: absolute;
+	left:20%;
+	top:35%;
+}
+
+.container-console{
+	display: flex;
+	color: gray;
+}
+
+#chevron{
+	font-size: 25px;
+	background: -webkit-linear-gradient(#0033cc,violet);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+/*
+#arrow-down{
+	font-size: 12px;
+}
+
+#arrow-down{
+	margin-top: 2em;
+}
+*/
+
+#angle-down{
+	font-size: 15px;
+}
+
+
+.container-text h2{
+	margin-top: 1.5em;
+	margin-left: 1.7em;
+	font-size: 18px;
+	display: flex;
+  align-items: center;
+  gap:6px;
+
+}
+
+.container-text h3{
+	margin-left: 2em;
+	background: -webkit-linear-gradient(left,#0033cc,violet,#ffb3ff);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.container-text a{
+	text-decoration: none;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+
+}
+
+.container-text h2::after{
+	content: "";
+	width: 4px;
+	height: 25px;
+	background: -webkit-linear-gradient(violet, #000080);
+	animation: cursor 1.3s steps(2) infinite;
+}
+
+.banner{
+	display: flex;
+}
+
+#banner-image img{	
+	margin-left: 2em;
+	height: 130px;
+	width: 130px;
+}
+
+main{
+	margin: 2em;
+}
+
+.me, .work{
+	font-weight: 300;
+	max-width: 600px;
+}
+
+.me{
+	margin: 5em auto;
+}
+
+.work{
+	margin: 5em auto;
+}
+
+.work a{
+	color: black;
+}
+
+.work a:hover{
+	color:#333333;
+	text-decoration: none;
+}
+
+.work-box{
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	padding: 3em;
+	border: 1px dashed gray;
+}
+
+.contact{
+	padding: 3em;
+	text-align: center;
+}
+
+.contact a, .mail a{
+	color: rgb(0, 0, 0);
+
+}
+
+.contact a:hover, .mail a:hover{
+	color:#333333;
+	text-decoration: none;
+}
+
+.mail{
+	text-align: center;
+	width: 100%;
+	padding: 3em;
+	
+}
+
+.contact img{
+	height: 30px;
+	width: 30px;
+	margin-right: 3px;
+}
+
+.mail img{
+	height: 30px;
+	width: 30px;
+	margin-right:4px;
+}
+
+.gb-container{
+	
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+}
+
+.mail-container{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	margin-bottom: 2em;
+}
+
+footer{
+	background-color: #EEEEEE;
+	text-align: center;
+	font-family: monospace;
+	padding: 0.2em;
+
+}
+
+footer a{
+	color: rgb(0, 0, 0);
+}
+
+.container-footer{
+	margin: 0.5em;
+}
+
+@media (max-width: 650px) { 
+
+	.banner{
+		flex-direction: column-reverse;
+		position: absolute;
+		top: 35%;
+		left: 20%;
+	}
+
+	.banner h1{
+		font-size: 16px;
+	}
+
+	.banner h2{
+		font-size: 13px;
+	}
+	
+	#banner-image img{	
+		height: 90px;
+		width: 90px;
+		margin-left:5em;
+		margin-bottom: 3em;
+	}
+
+	#chevron{
+		font-size: 21px;
+	}
+
+	.container-text h3{
+		margin-left: 1.7em;
+		font-size: 12px;
+	}
+
+	.navbar a{
+		font-size:15px;
+	}
+}
+
+@media (max-width: 360px) { 
+	.banner{
+		left: 15%;
+	}
+}
