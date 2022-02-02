@@ -73,15 +73,6 @@ header{
   	-webkit-text-fill-color: transparent;
 }
 
-/*
-#arrow-down{
-	font-size: 12px;
-}
-
-#arrow-down{
-	margin-top: 2em;
-}
-*/
 
 #angle-down{
 	font-size: 15px;
@@ -148,7 +139,7 @@ main{
 }
 
 .work{
-	margin: 5em auto;
+	margin: 4em auto;
 }
 
 .work a{
