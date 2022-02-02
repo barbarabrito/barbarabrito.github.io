@@ -58,7 +58,7 @@ header{
 	font-family: monospace;
 	position: absolute;
 	left:20%;
-	top:35%;
+	top:40%;
 }
 
 .container-console{
@@ -72,6 +72,16 @@ header{
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
+
+/*
+#arrow-down{
+	font-size: 12px;
+}
+
+#arrow-down{
+	margin-top: 2em;
+}
+*/
 
 #angle-down{
 	font-size: 15px;
@@ -226,7 +236,7 @@ footer a{
 	.banner{
 		flex-direction: column-reverse;
 		position: absolute;
-		top: 35%;
+		top: 40%;
 		left: 20%;
 	}
 
