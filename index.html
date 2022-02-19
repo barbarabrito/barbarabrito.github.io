@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -14,16 +15,20 @@
 <body>
 	<header>
 		<div class="container-header">
-			<nav class="navbar">
-				<ul>
-					<li><a href="#work">Work</a></li>
+			<nav class="navbar" id="nav">
+				<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+					<span id="hamburger"></span>
+				</button>
+				<ul id="menu" role="menu">
+					<li><a href="#work">Projects</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="https://barbarabrito.github.io/blog" target="_blank">Blog</a></li>
 				</ul>
 			</nav>
 			<div class="banner">
 				<div class="container-text">										
 					<h1><i class="fa fa-chevron-right" id="chevron"></i> Hello, I'm Bárbara</h1>					
-					<h2>I'm  a fullstack developer</h2>
+					<h2>I'm  a full stack developer</h2>
 					<br/>
 					<h3>Slide to read more <i class="fa fa-angle-down" id="angle-down"></i></h3>
 				</div>
@@ -40,7 +45,7 @@
 			<h2>About me</h2>
 			<br>
 
-			<p>I'm a fullstack developer from Brazil.</p>
+			<p>I'm a full stack developer from Brazil.</p>
 			<p>I'm passionate about everything involving computers and technology.</p>
 			<p>I'm a Linux lover, open source enthusiast and self-taught programmer. I enjoy learning new things (anything, really!) every day. Currently, all about ReactJs.</p>
 			<p>Love Javascript, Python, Java.</p>
@@ -64,6 +69,12 @@
 				</div>
 				<br>
 				<div class="work-box">
+					<h3>Slappy</h3>
+
+					<p>A python script that bypasses paywall and displays news from 5 major brazilian journals through computer terminal.</p>
+					<p>Code: <a href="https://github.com/barbarabrito/Slappy" target="_blank">github</a></p>
+				</div>
+				<div class="work-box">
 					<h3>Diagnoser</h3>
 
 					<p>An android app for lactose intolerance detection</p>
@@ -85,7 +96,7 @@
 			<br>
 			<span class="mail-container">
 				<img src="img/email32.png">
-				<a href="mailto:barbaramabrito@gmail.com">barbaramabrito(at)gmail.com</a>
+				<a href="mailto:barbaramabrito@gmail.com">barbaramabrito@gmail.com</a>
 			</span>
 		</div>
 	</main>
@@ -95,5 +106,6 @@
 			<p><small>Icons by <a href="https://www.flaticon.com/" target="_blank">Freepik Flat Icon</a> (thank you <a href="http://www.dariusdan.com/" target="_blank">Darius Dan</a>, Dave Gandy and Uniconlabs)</a></small></p>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>
