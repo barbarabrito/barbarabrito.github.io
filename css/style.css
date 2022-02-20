@@ -114,7 +114,7 @@ header{
 
 .container-text h2::after{
 	content: "";
-	width: 4px;
+	width: 3px;
 	height: 25px;
 	background: -webkit-linear-gradient(violet, #000080);
 	animation: cursor 1.3s steps(2) infinite;
@@ -232,16 +232,24 @@ footer a{
 	.banner{
 		flex-direction: column-reverse;
 		position: absolute;
-		top: 40%;
-		left: 16%;
+		left:  50%;
+		margin-left: -120px;
+		top: 50%;
+		margin-top: -135px;
 	}
+
+
+.container-text h2::after{
+	width: 2px;
+	height: 16px;
+}
 
 	.banner h1{
 		font-size: 16px;
 	}
 
 	.banner h2{
-		font-size: 13px;
+		font-size: 12px;
 	}
 	
 	#banner-image img{	
@@ -335,10 +343,3 @@ footer a{
     top: -7px;
   }
 }
-
-@media (max-width: 360px) { 
-	.banner{
-		left: 15%;
-	}
-}
-
