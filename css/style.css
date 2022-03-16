@@ -60,6 +60,7 @@ header{
 .banner{
 
 	font-family: monospace, monospace;
+	font-size: 12px;
 	position: absolute;
 	left:20%;
 	top:40%;
@@ -213,7 +214,7 @@ main{
 footer{
 	background-color: #EEEEEE;
 	text-align: center;
-	font-family: monospace, monospace;
+	font-family: monospace;
 	padding: 0.5em;
 
 }
