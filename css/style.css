@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap');
 
 html, body{
 
@@ -60,7 +59,7 @@ header{
 
 .banner{
 
-	font-family: monospace;
+	font-family: monospace, monospace;
 	position: absolute;
 	left:20%;
 	top:40%;
@@ -164,11 +163,11 @@ main{
 }
 
 .contact{
-	padding: 3em;
+	padding: 2em;
 	text-align: center;
 }
 
-.contact a, .mail a{
+.contact a, .mail-linkedin a{
 	color: rgb(0, 0, 0);
 
 }
@@ -178,10 +177,10 @@ main{
 	text-decoration: none;
 }
 
-.mail{
+.mail-linkedin{
 	text-align: center;
 	width: 100%;
-	padding: 3em;
+	padding: 2em;
 	
 }
 
@@ -191,7 +190,7 @@ main{
 	margin-right: 3px;
 }
 
-.mail img{
+.mail-linkedin img{
 	height: 30px;
 	width: 30px;
 	margin-right:4px;
@@ -204,7 +203,7 @@ main{
 	justify-items: center;
 }
 
-.mail-container{
+.mail-container, .linkedin-container{
 	display: flex;
 	justify-content: center;
 	justify-items: center;
@@ -214,8 +213,8 @@ main{
 footer{
 	background-color: #EEEEEE;
 	text-align: center;
-	font-family: monospace;
-	padding: 0.2em;
+	font-family: monospace, monospace;
+	padding: 0.5em;
 
 }
 
