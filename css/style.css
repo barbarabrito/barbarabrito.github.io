@@ -42,6 +42,7 @@ header{
 	background: -webkit-linear-gradient(left,#4d79ff,violet);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+	background-clip: text;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -75,6 +76,7 @@ header{
 	font-size: 22px;
 	background: -webkit-linear-gradient(#0033cc,violet);
   	-webkit-background-clip: text;
+	background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
 
@@ -98,6 +100,7 @@ header{
 	margin-left: 2em;
 	background: -webkit-linear-gradient(left,#0044cc,violet,#ffb3ff);
   	-webkit-background-clip: text;
+	  background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
 
@@ -204,11 +207,17 @@ main{
 	justify-items: center;
 }
 
-.mail-container, .linkedin-container{
+.mail-container{
 	display: flex;
 	justify-content: center;
 	justify-items: center;
 	margin-bottom: 2em;
+}
+
+.linkedin-container{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
 }
 
 footer{
