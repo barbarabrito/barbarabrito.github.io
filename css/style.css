@@ -163,13 +163,13 @@ main{
 .work-box{
 	margin-top: 3em;
 	padding: 1em;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .work-box img{
 	width: 150px;
 	height: 100px;
-	border-radius: 10px;
+	border-radius: 4px;
 }
 
 .contact{
