@@ -1,123 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-	rel="stylesheet"
-	/>
-	<link rel="icon" href ="img/computer-chip64.png" type="image/x-icon">
-	<title>bárbara.portfolio</title>
-</head>
-<body>
-	<header>
-		<div class="container-header">
-			<nav class="navbar" id="nav">
-				<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-					<span id="hamburger"></span>
-				</button>
-				<ul id="menu" role="menu">
-					<li><a href="#work">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="https://barbarabrito.github.io/blog" target="_blank">Blog</a></li>
-				</ul>
-			</nav>
-			<div class="banner">
-				<div class="container-text">										
-					<h1><i class="fa fa-chevron-right" id="chevron"></i> Hello, I'm Bárbara</h1>					
-					<h2>I'm  a full stack developer</h2>
-					<br/>
-					<h3>Slide to read more <i class="fa fa-angle-down" id="angle-down"></i></h3>
-				</div>
-				<div id="banner-image">
-					<img src="img/computer-chip.png">
-				</div>								
-			</div>
-		</div>
-	</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="public/images/computer-chip64.png" type="image/x-icon" />
+    <title>bárbara.portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <!-- <nav class="navbar" id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="https://barbarabrito.github.io/blog" target="_blank"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav> -->
+        <div class="banner">
+          <div class="container-text">
+            <h1>
+              <i class="fa fa-chevron-right" id="chevron"></i> Hello, I'm
+              Bárbara
+            </h1>
+            <h2>I'm a full stack developer</h2>
+            <br />
+			<span id="read-more">
+				<a href="#beginning" class="smooth-scroll"> Read more <i class="fa fa-angle-down" id="angle-down"></i></a
+			</span>
+          </div>
+          <div id="banner-image">
+            <img src="public/images/computer-chip.png" />
+          </div>
+        </div>
+      </div>
+    </header>
 
-	<main class="container-main">
+	<div id="beginning"></div>
+	
+    <main class="container-main">
+      <div id="me">
+        <h2>About me</h2>
+        <br />
 
-		<div class="me">
-			<h2>About me</h2>
-			<br>
-
-			<p>I'm a full stack developer from Brazil.</p>
-			<p>I'm passionate about everything involving computers and technology.</p>
-			<p>I'm a Linux lover, open source enthusiast and self-taught programmer. I enjoy learning new things (anything, really!) every day. Currently, all about React.js.</p>
-			<p>Love JavaScript, Python, Java.</p>
-		</div>
-		<div class="work" id="work">
+        <p>I'm a full stack developer from Brazil.</p>
+        <p>
+          I'm passionate about everything involving computers and technology.
+        </p>
+        <p>
+          I'm a Linux lover, open source enthusiast and self-taught programmer.
+          I enjoy learning new things (anything, really!) every day.
+        </p>
+      </div>
+      <!-- <div class="work" id="work">
 			<h2>Here are some projects I have worked on:</h2>
 			<br>
 			<div class="work-box-container">
 				<div class="work-box">
-					<img src="img/haikaidodia.png">
+					<img src="public/images/haikaidodia.png">
 					<h3>Haikai do dia</h3>
 					<a href="https://haikaidodia.com/" target="_blank">haikaidodia.com</a> 
 					<p>A website that displays haikus on homepage (written in brazilian portuguese/japanese).</p>
 					<p>source-code: <a href="https://github.com/barbarabrito/haikaidodia" target="_blank">github</a></p>
 				</div>
-				<div class="work-box">
-					<img src="img/demo_kiriris.png">
-					<h3>Projeto Kiriris</h3>
-					<a href="https://projetokiriris.vercel.app" target="_blank">projetokiriris.vercel.app</a>
-					<p>Recode PRO social project about Kiriris - brazilian indigenous peoples from Bahia, Brazil.</p>
-					<p>I developed website design/front-end.</p>
-					<p>source-code: <a href="https://github.com/barbarabrito/projeto-kiriris-react" target="_blank">github</a></p>
-				</div>
-				
-				<div class="work-box">
-					<img src="img/nopaywall.png">
-					<h3>No Paywall</h3>
-					<a href="https://nopaywall.onrender.com" target="_blank">nopaywall.onrender.com</a> 
-					<p>Paywall bypasser built with <strong>node.js</strong>, <strong>cheerio</strong> and <strong>express-handlebars</strong></p>
-					<p>source-code: <a href="https://github.com/barbarabrito/no-paywall" target="_blank">github</a></p>
-				</div>
-				
-				<div class="work-box">
-					<img src="img/parkingup.png">
-					<h3>Parking Up</h3>
-					<a href="https://parkingup.vercel.app" target="_blank">parkingup.vercel.app</a> 
-					<p>A car parking management system built with <strong>node.js</strong> and <strong>react.js</strong></p>
-					<p>source-code: <a href="https://github.com/barbarabrito/parking-up" target="_blank">github</a></p>
-				</div>
+		
 			</div>
-		</div>
-		<div class="contact" id="contact">
-			<h2>You can find me and check more of my code at GitHub:</h2>
+		</div> -->
+      <div class="contact" id="contact">
+        <h2>You can find me and check more of my code at GitHub:</h2>
 
-			<br>
-			<span class="gb-container">
-				<img src="img/gb32.png">
-				<a href="https://github.com/barbarabrito" target="_blank">github.com/barbarabrito</a>
-			</span>
-		</div>
-		<div class="mail-linkedin">
-			<h2>Contact</h2>
-			<br>
-			<div>
-				<span class="mail-container">
-					<img src="img/email32.png">
-					<a href="mailto:barbaramabrito@gmail.com">barbaramabrito@gmail.com</a>
-				</span>
-				<span class="linkedin-container">
-					<img src="img/linkedin_rounded.png">
-					<a href="https://www.linkedin.com/in/barbaramabrito" target="_blank">linkedin.com/in/barbaramabrito</a>
-				</span>
-			</div>
-		</div>
-	</main>
-	<br/>
-	<footer>
-		<div class="container-footer">
-			<p><strong><small>&copy; 2022 Bárbara M A Brito</small></strong></p>
-			<p><small>Icons by <a href="https://www.flaticon.com/" target="_blank">Freepik Flat Icon</a> (thank you <a href="http://www.dariusdan.com/" target="_blank">Darius Dan</a>, Dave Gandy and Uniconlabs)</a></small></p>
-		</div>
-	</footer>
-	<script src="js/script.js"></script>
-</body>
+        <br />
+        <span class="gb-container">
+          <img src="/public/images/github-character.png" />
+          <a href="https://github.com/barbarabrito" target="_blank" rel="noopener noreferrer">github.com/barbarabrito</a>
+        </span>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <br />
+        <div>
+          <span class="mail-container">
+            <img src="public/images/at.png" />
+            <a href="mailto:barbaramabrito@gmail.com"
+              >barbaramabrito@gmail.com</a
+            >
+          </span>
+          <span class="linkedin-container">
+            <img src="public/images/linkedin_rounded.png" />
+            <a href="https://www.linkedin.com/in/barbaramabrito" target="_blank" rel="noopener noreferrer">
+				linkedin.com/in/barbaramabrito
+			</a>
+          </span>
+        </div>
+      </div>
+    </main>
+    <br />
+    <footer>
+      <div class="container-footer">
+        <p>
+			<strong><small> Bárbara M A Brito </small></strong> </p>
+        </p>
+        <p>
+          <small
+            >Icons by
+            <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">Freepik</a>
+          </small>
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
